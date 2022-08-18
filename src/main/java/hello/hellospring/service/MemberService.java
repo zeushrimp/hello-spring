@@ -17,7 +17,9 @@ public class MemberService {
 
     @Autowired
     public MemberService(MemberRepository memberRepository){
+
         this.memberRepository = memberRepository;
+
     }
 
     /**
