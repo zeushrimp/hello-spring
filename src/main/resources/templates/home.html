@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/style/css/style.css}" rel="stylesheet"/>
+      <link  href="https://fonts.googleapis.com/css?family=Lobster"  rel="stylesheet">
+</head>
 <body>
 
 <div class="container">
     <div>
         <h1>Hello Spring</h1>
         <p>회원 기능</p>
-        <p>
-            <a href="/members/new">회원 가입</a>
-            <a href="/members">회원 목록</a>
-        </p>
+        <div class="container">
+            <a class="btn blue" href="/members/new">회원 가입</a>
+            <a class="btn red" href="/members">회원 목록</a>
+            <progress value="20" max="100"></progress>
+        </div>
     </div>
 </div> <!--/container-->
 
